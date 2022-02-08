@@ -19,7 +19,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Site1",
-		"logo": "images/gf6741d37663adc3b689c0c3ff5d0bb6c293ca9aa49fe759f99f5abe26c1b3bb60f3afe56ab147d270ecf63bf10e13e17_1280.png"
+		"logo": "/images/gf6741d37663adc3b689c0c3ff5d0bb6c293ca9aa49fe759f99f5abe26c1b3bb60f3afe56ab147d270ecf63bf10e13e17_1280.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Appointment">
@@ -28,7 +28,7 @@
   </head>
   <body class="u-body u-stick-footer u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-6aba"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="Home.html" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1218">
-          <img src="images/gf6741d37663adc3b689c0c3ff5d0bb6c293ca9aa49fe759f99f5abe26c1b3bb60f3afe56ab147d270ecf63bf10e13e17_1280.png" class="u-logo-image u-logo-image-1">
+          <img src="/images/gf6741d37663adc3b689c0c3ff5d0bb6c293ca9aa49fe759f99f5abe26c1b3bb60f3afe56ab147d270ecf63bf10e13e17_1280.png" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -39,18 +39,14 @@
             </a>
           </div>
           <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Appointment.html" style="padding: 10px 20px;">Appointment</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Appointment.html" style="padding: 10px 20px;">Appointment</a>
 </li></ul>
           </div>
           <div class="u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Appointment.html">Appointment</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Appointment.html">Appointment</a>
 </li></ul>
               </div>
             </div>
@@ -153,7 +149,23 @@
               <label for="date-a763" class="u-label">Availability</label>
               <input type="date" placeholder="MM/DD/YYYY" id="date-a763" name="date" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-9" required="required">
             </div>
-            <div class="u-form-agree u-form-group u-label-top u-form-group-10">
+            <div class="u-form-group u-form-select u-label-top u-form-group-10">
+              <label for="select-39ee" class="u-label">Service Need </label>
+              <div class="u-form-select-wrapper">
+                <select id="select-39ee" name="select-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-10" required="required">
+                  <option value="--Select--">--Select--</option>
+                  <option value="House Keeping">House Keeping</option>
+                  <option value="Electrical Service">Electrical Service</option>
+                  <option value="Pool Cleaning">Pool Cleaning</option>
+                  <option value="Lawn Care">Lawn Care</option>
+                  <option value="Handman">Handman</option>
+                  <option value="Plumbing">Plumbing</option>
+                  <option value="Remodeling">Remodeling</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-agree u-form-group u-label-top u-form-group-11">
               <input type="checkbox" id="agree-227a" name="agree" class="u-agree-checkbox" required="">
               <label for="agree-227a" class="u-label">I accept the <a href="#">Terms of Service</a>
               </label>
@@ -162,8 +174,8 @@
               <input type="submit" value="submit" class="u-form-control-hidden">
               <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
             </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <div class="u-form-send-message u-form-send-success">Thank you! We will email with the information for your service needs.  </div>
+            <div class="u-form-send-error u-form-send-message"> Please fill out the missing information to proceed.  </div>
             <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
