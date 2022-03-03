@@ -1,0 +1,69 @@
+{
+	"Description": "A quick test template for Cloud Formation",
+
+	"Parameters": {
+		"KeyPair": {
+			"Description": "EC2 Instance Key Pair name",
+			"Type": "String"
+		},
+		"DBMasterPassword": {
+			"Description": "Password for master user of database",
+			"NoEcho": "true",
+			"Type": "String",
+			"MinLength": 8,
+			"AllowedPattern": "[a-zA-Z0-9]*"
+		}
+	},
+
+	"Resources": {
+		"Ec2Instace": {
+			"Type": "AWS::EC2::Instance",
+			"Properties": {
+				"ImageId": "ami-033b95fb8079dc481",
+				"InstanceType": "t2.medium",
+				"KeyName": {
+					"Ref": "AWS-Key-pair.pem"
+				},
+				"SecurityGroups": [{
+					"Ref": "SSHSecurityGroup"
+				}]
+			}
+		},
+		"SSHSecurityGroup": {
+			"Type": "AWS::EC2::SecurityGroup",
+			"Properties": {
+				"GroupDescription": "Security group for SSH connection",
+				"SecurityGroupIngress": [{
+					"IpProtocol": "tcp",
+					"FromPort": 22,
+					"ToPort": 22,
+					"CidrIp": "0.0.0.0/0"
+				}]
+			}
+		},
+		"ProjectDB": {
+			"Type": "AWS::RDS::DBInstance",
+			"Properties": {
+				"DBInstanceIdentifier": "CIT481Spring2022",
+				"DBName": "CITDB",
+				"DBInstanceClass": "db.t3.micro",
+				"Engine": "MySQL",
+				"EngineVersion": "8.0.28",
+				"AllocatedStorage": 50,
+				"MasterUsername": "admin",
+				"MasterUserPassword": {
+					"Ref": "DBMasterPassword"
+				}
+			}
+		}
+	},
+
+	"Outputs": {
+		"InstanceId": {
+			"Description": "Instance id of newly created EC2 instance",
+			"Value": {
+				"Ref": "Ec2Instace"
+			}
+		}
+	}	
+}
