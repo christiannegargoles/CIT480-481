@@ -22,7 +22,7 @@
 				"ImageId": "ami-033b95fb8079dc481",
 				"InstanceType": "t2.medium",
 				"KeyName": {
-					"Ref": "AWS-Key-pair.pem"
+					"Ref": "KeyPair"
 				},
 				"SecurityGroups": [{
 					"Ref": "SSHSecurityGroup"
