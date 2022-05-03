@@ -37,32 +37,61 @@
 </g></svg>
             </a>
           </div>
-        </nav>
-      </div></header><section class="u-align-center u-clearfix u-section-1" id="sec-4d3d">
-        <div class="u-clearfix u-sheet u-sheet-1">
-          <div class="u-form u-form-1">
-            <form action="form1.php" method="POST" style="border:1px solid #ccc">
-              <div class="container">
-              <h1>Sign Up</h1>
-              <hr>
-              <label for="username"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="username" required>
-              <br>
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required>
-              <br>
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="pwd" required>
-              <br>
-              <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-              </label>
-
-              <div class="clearfix">
-                <button onclick="document.location='Login.html'">Cancel</button>
-                <button type="submit" name="submit" class="signupbtn">Sign Up</button>
+          <div class="u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Login.html" style="padding: 10px 20px;">Login</a>
+</li></ul>
+          </div>
+          <div class="u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Login.html">Login</a>
+</li></ul>
               </div>
             </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <h3 class="u-headline u-text u-text-default u-text-1">
+          <a>
+            <span style="font-size: 1.5rem; font-style: italic;">MECT Services</span>
+            <br>
+          </a>
+        </h3>
+      </div></header>
+      <section class="u-clearfix u-section-1" id="sec-b836">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">SIGN UP<br>
+        </h2>
+        <div class="u-form u-login-control u-form-1">
+          <form action="form1.php" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+            <div class="u-form-group u-form-name">
+              <label for="username" class="u-label u-label-1">Username *</label>
+              <input type="text" placeholder="Enter your username" id="username-a30d" name="username" class="u-border-grey-30 u-input u-input-rectangle u-input-1" required>
+            </div>
+            <div class="u-form-group u-form-password">
+              <label for="email" class="u-label u-label-1">Email *</label>
+              <input type="text" placeholder="Enter your email" id="email-a30d" name="email" class="u-border-grey-30 u-input u-input-rectangle u-input-2" required>
+            </div>
+            <div class="u-form-group u-form-password">
+              <label for="psw" class="u-label u-label-1">Password *</label>
+              <input type="text" placeholder="Enter your password" id="password-a30d" name="pwd" class="u-border-grey-30 u-input u-input-rectangle u-input-2" required>
+            </div>
+            <div class="u-form-checkbox u-form-group">
+              <input type="checkbox" id="checkbox-a30d" name="remember" value="On">
+              <label for="checkbox-a30d" class="u-label">Remember me</label>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <a class="u-btn u-btn-submit u-button-style u-btn-1">Sign Up</a>
+              <input type="submit" value="submit" name="submit" class="u-form-control-hidden">
+            </div>
+            <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
       </div>
