@@ -29,6 +29,7 @@ sudo a2dissite 000-default.conf
 #php/mysql
 sudo apt install php libapache2-mod-php -y
 sudo apt install php-mysql -y
+sudo apt install mysql-client-core-8.0
 sudo systemctl restart apache2
 
 #install snap + certbot
