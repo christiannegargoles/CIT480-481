@@ -18,10 +18,9 @@
         // A statment that checks the feilds if the username & pass are correct
         if($count == 1){
             echo "<h1><center> Login successful </center></h1>";
-            header( 'Location: http://18.208.62.150/Home.html' ) ;
+            header( 'Location: Home.html' ) ;
         }
         else{
-            header( 'Location: not-found.html');
-                #echo "<h1> 404 Login failed. Invalid username or password.</h1>";  
+            header( 'Location: not-found.html');  
         }
 ?>
