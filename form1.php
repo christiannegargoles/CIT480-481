@@ -35,7 +35,7 @@ if ($conn->multi_query($sql) === TRUE) {
 //connection closed.
 $conn->close();
 #redirects after hitting submit
-header( 'Location: http://18.208.62.150/Login.html') ;
+header( 'Location: Login.html') ;
 exit;
 
     }
