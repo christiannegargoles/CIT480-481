@@ -22,12 +22,14 @@ git clone https://github.com/christiannegargoles/CIT480-481.git
 cp -a CIT480-481/. /var/www/mect
 
 
-#move unneccesary files
+#move file locations
 sudo mkdir extra
 sudo mv /var/www/mect/AWS-Key-pair.pem /home/ubuntu/extra
 sudo mv /var/www/mect/ubuntu.sh /home/ubuntu/extra
 sudo mv /var/www/mect/sample-couldformation-template.json /home/ubuntu/extra
 sudo mv /var/www/mect/README.md /home/ubuntu/extra
+sudo mv /var/www/mect/mysql.sh /home/ubuntu
+sudo chmod +x mysql.sh
 
 #make .conf file (vhost)
 sudo mv /var/www/mect/mect.conf /etc/apache2/sites-available
