@@ -18,7 +18,7 @@
         // A statment that checks the feilds if the username & pass are correct
         if($count == 1){
             echo "<h1><center> Login successful </center></h1>";
-            header( 'Location: Home.html' ) ;
+            header( 'Location: Memberpage.html' ) ;
         }
         else{
             header( 'Location: not-found.html');  
