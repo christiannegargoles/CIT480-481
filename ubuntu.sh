@@ -21,8 +21,16 @@ git clone https://github.com/christiannegargoles/CIT480-481.git
 #chmod +x /home/ubuntu/CIT480-481/apache.sh
 cp -a CIT480-481/. /var/www/mect
 
+
+#move unneccesary files
+sudo mkdir extra
+sudo mv /var/www/mect/AWS-Key-pair.pem /home/ubuntu/extra
+sudo mv /var/www/mect/ubuntu.sh /home/ubuntu/extra
+sudo mv /var/www/mect/sample-couldformation-template.json /home/ubuntu/extra
+sudo mv /var/www/mect/README.md /home/ubuntu/extra
+
 #make .conf file (vhost)
-sudo cp CIT480-481/mect.conf /etc/apache2/sites-available
+sudo mv /var/www/mect/mect.conf /etc/apache2/sites-available
 sudo a2ensite mect.conf
 sudo a2dissite 000-default.conf
 
